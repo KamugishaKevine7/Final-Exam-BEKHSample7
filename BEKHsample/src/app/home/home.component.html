@@ -1,0 +1,41 @@
+<style>
+  /* Set black background color, white text and some padding */
+  footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+      background-image: url("../assets/2.jpg");
+  }
+</style>
+
+<div class="container-fluid text-center">
+  <div class="title-section">
+      <h1 class="title-text">Upcoming Events</h1>
+  </div>
+  <div class="row content">
+      <!-- Iterate over each event and display event details -->
+      <div class="col-sm-2 text-left" *ngFor="let event of events">
+          <h1><a routerLink="event/{{event['id']}}">{{event["title"]}}</a></h1>
+          <img src="../assets/event.jpg" alt="Event Image" style="width:100%;">
+          <p><strong>Date and Time:</strong> {{event["event_date"]}} {{event["event_time"]}}</p>
+          <p><strong>Location:</strong> {{event["address"]}}</p>
+          <!-- Add more event details as needed -->
+      </div>
+  </div>
+</div>
+<div class="container-fluid text-center">
+  <div class="row content">
+      <!-- Your vision and mission content remains unchanged -->
+      <div class="col-sm-6 text-left">
+        <h1>Vision</h1>
+        <p>African entrepreneur envisions africa where access to economic opportunities and ownership of wealth is representative of the nation’s demographics; africa in which African communities have agency to lead coordinated research efforts and generate knowledge to inform equity and inclusion in entrepreneurship ecosystems.</p>
+
+      </div>
+      <div class="col-sm-6 text-left">
+          <h1>Mission</h1>
+          <p>African is the continental central hub for research, data and insights on young entrepreneurship ecosystems in Africa. Our mission is to facilitate and orchestrate structured community-led research collaborations anchored in regional hubs comprised of community and academic researchers, community organizations, post-secondary universities, and colleges</p>
+
+      </div>
+
+  </div>
+</div>

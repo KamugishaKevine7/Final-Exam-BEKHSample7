@@ -1,0 +1,33 @@
+<div class="container">
+    <form class="well form-horizontal" action="" method="post" id="contact_form">
+        <fieldset>
+            <legend>Event Registration</legend>
+            
+            <div class="form-group">
+                <label class="col-md-4 control-label">Event Title: {{event["title"]}}</label>
+            </div>
+            
+            <div class="form-group">
+                <label class="col-md-4 control-label">Host: {{event["host"]}}</label>
+            </div>
+            
+            <div class="form-group">
+                <label class="col-md-4 control-label">Address: {{event["address"]}}</label>
+            </div>
+            
+            <div class="form-group">
+                <label class="col-md-4 control-label">Date and Time: {{event["event_date"]}} {{event["event_time"]}}</label>
+            </div>
+            
+            <div class="form-group">
+                <label class="col-md-4 control-label">Description: {{event["description"]}}</label>
+            </div>
+            
+            <!-- Add a registration button here -->
+            <div class="form-group">
+                <label class="col-md-4 control-label"></label>
+                <button type="submit" class="btn btn-primary">Register</button>
+            </div>
+        </fieldset>
+    </form>
+</div>
